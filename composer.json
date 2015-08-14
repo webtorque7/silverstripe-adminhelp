@@ -1,0 +1,18 @@
+{
+    "name": "webtorque7/adminhelp",
+    "description": "Adds a CMS managed help section",
+    "type": "silverstripe-module",
+    "keywords": ["silverstripe", "module", "help"],
+    "require": {
+        "silverstripe/framework": "~3.1.*",
+        "silverstripe-australia/gridfieldextensions": "@dev"
+
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Conrad",
+            "email": "conrad@webtorque.co.nz"
+        }
+    ]
+}

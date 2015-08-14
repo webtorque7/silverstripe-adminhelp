@@ -1,0 +1,51 @@
+ol.admin-help-list {
+	max-width: 200px;
+	padding: 0 0 0 20px;
+	list-style-type: decimal;
+	counter-reset: section;
+
+	> li {
+		margin: 10px 0;
+
+		font-size: 16px;
+		counter-increment: section;
+
+		ol {
+			list-style-type: lower-alpha;
+			margin-top: 5px;
+			counter-reset: item;
+
+			> li {
+				font-size: 14px;
+				margin: 5px 0 5px 10px;
+
+				&:before {
+					content: counters(item) " ";
+					counter-increment: item;
+				}
+			}
+		}
+	}
+
+	li {
+		.summary {
+
+			.cms-panel.west & {
+				display:none;
+			}
+
+			p {
+				font-size: 12px;
+			}
+		}
+
+		a.current {
+			color:#000;
+		}
+
+	}
+}
+
+.admin-help-right-button {
+	float:right;
+}
