@@ -4,7 +4,7 @@
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "module", "help"],
     "require": {
-        "silverstripe/framework": "~3.1.*",
+        "silverstripe/framework": "~3.1",
         "silverstripe-australia/gridfieldextensions": "@dev"
 
     },
