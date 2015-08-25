@@ -29,7 +29,7 @@ class AdminHelp extends DataObject
 	private static $summary_fields = array(
 		'Title' => 'Title',
 		'Parent.Title' => 'Parent',
-		'Summary.forTemplate' => 'Summary'
+		'Summary.NoHTML' => 'Summary'
 	);
 
 	public function getCMSFields() {
