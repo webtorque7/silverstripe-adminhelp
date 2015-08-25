@@ -49,3 +49,9 @@ ol.admin-help-list {
 .admin-help-right-button {
 	float:right;
 }
+
+#admin-help-controller-cms-content{
+	.cms-edit-form{
+		overflow: scroll;
+	}
+}
