@@ -40,8 +40,4 @@ class AdminHelpController extends LeftAndMain implements PermissionProvider
 	public function MemberCanEdit() {
 		return Permission::check(array('ADMIN', 'ADMINHELP_ACCESS_EDIT'));
 	}
-
-	public static function help_link($uid) {
-		return Controller::join_links('/admin/admin-help/show/help', AdminHelp::by_uid($uid)->ID);
-	}
 }

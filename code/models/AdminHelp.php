@@ -149,6 +149,15 @@ class AdminHelp extends DataObject
 	 * @return DataObject
 	 */
 	public static function by_uid($uid) {
-		return AdminHelp::get()->filter('UniqueIdentifier', $uid)->first();
+		return AdminHelp::get()->filter('UniqueIdentifier', $uid)->first();	
+	}
+
+	/**
+	 * Returns a link to view this AdminHelp item in the CMS
+	 *
+	 * @return String
+	 */
+	public function Link(){
+		return Controller::join_links('admin/admin-help/show/help', $this->ID);
 	}
 }

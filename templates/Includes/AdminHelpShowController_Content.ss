@@ -27,13 +27,13 @@
     <div class="cms-content-actions cms-content-controls south">
         <% if $PreviousItem %>
             <% with $PreviousItem %>
-                <a href="/admin/admin-help/show/help/$ID" class="action ss-ui-button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">Previous "$Title"</a>
+                <a href="admin/admin-help/show/help/$ID" class="action ss-ui-button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">Previous "$Title"</a>
             <% end_with %>
         <% end_if %>
 
         <% if $NextItem %>
             <% with $NextItem %>
-                <a href="/admin/admin-help/show/help/$ID" class="action admin-help-right-button ss-ui-button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">Next "$Title"</a>
+                <a href="admin/admin-help/show/help/$ID" class="action admin-help-right-button ss-ui-button ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only">Next "$Title"</a>
             <% end_with %>
         <% end_if %>
     </div>
