@@ -132,17 +132,6 @@ class AdminHelp extends DataObject
 	}
 
 	/**
-	 * Make sure we have Sort
-	 */
-	public function onBeforeWrite() {
-		parent::onBeforeWrite();
-
-		if (!$this->Sort || $this->isChanged('ParentID')) {
-			$this->Sort = AdminHelp::get()->filter('ParentID', $this->ParentID)->max('Sort') + 1;
-		}
-	}
-
-	/**
 	 * Find a AdminHelp record by UniqueIdentifier
 	 *
 	 * @param string $uid
