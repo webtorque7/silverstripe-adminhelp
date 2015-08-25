@@ -8,3 +8,5 @@ ol.admin-help-list li .summary p { font-size: 12px; }
 ol.admin-help-list li a.current { color: #000; }
 
 .admin-help-right-button { float: right; }
+
+#admin-help-controller-cms-content .cms-edit-form { overflow: scroll; }
