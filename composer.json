@@ -5,7 +5,7 @@
     "keywords": ["silverstripe", "module", "help"],
     "require": {
         "silverstripe/framework": "~3.1",
-        "silverstripe-australia/gridfieldextensions": "@dev"
+        "silverstripe-australia/gridfieldextensions": "1.0.x@stable"
 
     },
     "license": "MIT",
