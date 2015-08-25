@@ -10,9 +10,9 @@ class AdminHelp extends DataObject
 {
 	private static $db = array(
 		'Title' => 'Varchar(200)',
+		'UniqueIdentifier' => 'Varchar(255)', //lookup so records can be retrieved without ID
 		'Summary' => 'HTMLText',
 		'Content' => 'HTMLText',
-		'UniqueIdentifier' => 'Varchar(255)', //lookup so records can be retrieved without ID
 		'Sort' => 'Int'
 	);
 
@@ -34,14 +34,20 @@ class AdminHelp extends DataObject
 
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
+		$fields->removeByName('Sort');
+		$fields->removeByName('ParentID');
+		$fields->removeByName('Summary');
+		$fields->removeByName('Content');
+		$fields->removeByName('UniqueIdentifier');
 
 		$fields->addFieldsToTab('Root.Main', array(
 			TextField::create('Title'),
+			TreeDropdownField::create('ParentID', 'Parent', 'AdminHelp', 'ID', 'Title'),
+			TextField::create('UniqueIdentifier'),
 			HtmlEditorField::create('Summary')
 				->setDescription('Short summary to show on hover')
 				->setRows(5),
 			HtmlEditorField::create('Content')->setDescription('Content of help article'),
-			TreeDropdownField::create('ParentID', 'Parent', 'AdminHelp', 'ID', 'Title')
 		));
 
 		if ($childrenGrid = $fields->fieldByName('Root.Children.Children')) {
