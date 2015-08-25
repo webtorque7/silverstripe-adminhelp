@@ -43,6 +43,10 @@ class AdminHelpField extends FormField
 	}
 
 	public function HelpLink() {
-		return AdminHelpController::help_link($this->uid);
+		return AdminHelp::by_uid($this->uid)->Link();
+	}
+
+	public function getUID(){
+		return $this->uid;
 	}
 }
