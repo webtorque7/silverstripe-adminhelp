@@ -53,5 +53,56 @@ ol.admin-help-list {
 #admin-help-controller-cms-content{
 	.cms-edit-form{
 		overflow: scroll;
+
+		h1{
+			font-size: 28px;
+			font-weight: bold;
+			margin: 0 0 20px;
+		}
+
+		h2{
+			font-size: 25px;
+			font-weight: normal;
+			margin: 0 0 20px;
+		}
+
+		h3{
+			font-size: 22px;
+			font-weight: normal;
+			margin: 0 0 20px;
+		}
+
+		h4{
+			font-size: 18px;
+			font-weight: normal;
+			margin: 0 0 20px;
+		}
+
+		h5{
+			font-size: 15px;
+			font-weight: normal;
+			margin: 0 0 20px;
+		}
+
+		p{
+			font-size: 15px;
+			line-height: 1.7;
+			margin: 0 0 16px; 
+
+			+ h1, + h2, + h3, + h4, +h5{
+		        margin-top: 30px;
+		    }
+		}
+
+		ul{
+			font-size: 15px;
+			line-height: 1.8;
+			list-style: disc;
+			margin: 20px 0 20px 20px;
+
+			+ h1, + h2, + h3, + h4, +h5{
+		        margin-top: 30px;
+		    }
+		}
 	}
 }
