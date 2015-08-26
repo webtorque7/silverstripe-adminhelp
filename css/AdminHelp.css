@@ -10,3 +10,12 @@ ol.admin-help-list li a.current { color: #000; }
 .admin-help-right-button { float: right; }
 
 #admin-help-controller-cms-content .cms-edit-form { overflow: scroll; }
+#admin-help-controller-cms-content .cms-edit-form h1 { font-size: 28px; font-weight: bold; margin: 0 0 20px; }
+#admin-help-controller-cms-content .cms-edit-form h2 { font-size: 25px; font-weight: normal; margin: 0 0 20px; }
+#admin-help-controller-cms-content .cms-edit-form h3 { font-size: 22px; font-weight: normal; margin: 0 0 20px; }
+#admin-help-controller-cms-content .cms-edit-form h4 { font-size: 18px; font-weight: normal; margin: 0 0 20px; }
+#admin-help-controller-cms-content .cms-edit-form h5 { font-size: 15px; font-weight: normal; margin: 0 0 20px; }
+#admin-help-controller-cms-content .cms-edit-form p { font-size: 15px; line-height: 1.7; margin: 0 0 16px; }
+#admin-help-controller-cms-content .cms-edit-form p + h1, #admin-help-controller-cms-content .cms-edit-form p + h2, #admin-help-controller-cms-content .cms-edit-form p + h3, #admin-help-controller-cms-content .cms-edit-form p + h4, #admin-help-controller-cms-content .cms-edit-form p + h5 { margin-top: 30px; }
+#admin-help-controller-cms-content .cms-edit-form ul { font-size: 15px; line-height: 1.8; list-style: disc; margin: 20px 0 20px 20px; }
+#admin-help-controller-cms-content .cms-edit-form ul + h1, #admin-help-controller-cms-content .cms-edit-form ul + h2, #admin-help-controller-cms-content .cms-edit-form ul + h3, #admin-help-controller-cms-content .cms-edit-form ul + h4, #admin-help-controller-cms-content .cms-edit-form ul + h5 { margin-top: 30px; }
