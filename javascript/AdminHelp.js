@@ -7,5 +7,12 @@
 				if(!$('.cms-container').loadPanel(this.attr('href'))) return false;
 			}
 		});
+
+		$('.admin-help-field-toggle').entwine({
+			onclick:function(e) {
+				e.preventDefault();
+				this.parent().find('.admin-help-field-content').slideToggle(0);
+			}
+		});
 	});
 })(jQuery);

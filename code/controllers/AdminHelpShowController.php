@@ -18,12 +18,6 @@ class AdminHelpShowController extends AdminHelpController implements PermissionP
 		'help'
 	);
 
-	public function init() {
-		parent::init();
-
-		Requirements::css(ADMINHELP_DIR . '/css/AdminHelp.css');
-	}
-
 	public function HelpItem() {
 		return AdminHelp::get()->byID($this->getRequest()->param('ID'));
 	}

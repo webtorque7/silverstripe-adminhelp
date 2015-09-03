@@ -18,8 +18,10 @@
     <div class="cms-edit-form cms-panel-padded center ui-tabs-panel ui-widget-content ui-corner-bottom" data-layout-type="border">
             <div id="Form_EditForm"></div>
             <% with $HelpItem %>
-                <h2>$Title</h2>
-                $Content
+                <div class="admin-help-typography">
+                    <h2>$Title</h2>
+                    $Content
+                </div>
             <% end_with %>
 
     </div>
