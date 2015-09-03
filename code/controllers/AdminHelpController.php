@@ -16,13 +16,6 @@ class AdminHelpController extends LeftAndMain implements PermissionProvider
 
 	private static $required_permission_codes = array('ADMINHELP_ACCESS_VIEW');
 
-	public function init() {
-		parent::init();
-
-		Requirements::javascript(ADMINHELP_DIR . '/javascript/AdminHelp.js');
-		Requirements::css(ADMINHELP_DIR . '/css/AdminHelp.css');
-	}
-
 	public function RootHelpItems() {
 		return AdminHelp::get()->filter('ParentID', 0);
 	}

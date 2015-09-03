@@ -1,0 +1,9 @@
+AdminHelp:
+  extensions:
+    - Hierarchy
+
+LeftAndMain:
+  extra_requirements_javascript:
+    - "adminhelp/javascript/AdminHelp.js"
+  extra_requirements_css:
+    - "adminhelp/css/AdminHelp.css"
