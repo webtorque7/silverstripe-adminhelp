@@ -24,4 +24,4 @@ ol.admin-help-list li a.current { color: #000; }
 .admin-help-typography ol { list-style-type: decimal; }
 
 .admin-help-field img { height: 20px; width: auto; vertical-align: text-bottom; margin-left: 10px; }
-.admin-help-field .admin-help-field-content { background: #fff; padding: 20px 20px 10px; margin-top: 20px; border: 1px solid #ccc; border-radius: 5px; }
+.admin-help-field .admin-help-field-content { display: none; background: #fff; padding: 20px 20px 10px; margin-top: 20px; border: 1px solid #ccc; border-radius: 5px; }
