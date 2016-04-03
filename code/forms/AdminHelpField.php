@@ -29,7 +29,6 @@ class AdminHelpField extends FormField
      * @param string $name Field name
      * @param null|string $text Short help link description
      * @param string $uid UniqueIdentifier for AdminHelp
-     * @param string|boolean $inline Whether to open this item in a new window
      */
     public function __construct($name, $text, $uid, $newWindow='default')
     {
